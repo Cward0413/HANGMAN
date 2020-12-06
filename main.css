@@ -1,0 +1,56 @@
+body{
+    background-image: url("bg.jpg");
+    background-size: cover;
+}
+#cover {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#cover-caption {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.backdrop:before {
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255,255,255,0.5);
+    z-index: -1;
+    border-radius: 10px;
+}
+#pGuess{
+    margin-bottom: 0px;
+    font-size: 25px;
+}
+#letterGuesses{
+    font-size: 25px;
+}
+#wgDiv{
+    padding-top: 15px;
+    font-size: 25px;
+}
+#wordBox{
+    min-height: 75px;
+}
+#gameMessage{
+    min-height: 25px;
+}
+#wordBox{
+    text-align: center;
+}
+#buttons{
+    padding-top: 25px;
+}
+#dupeGuess{
+    color: red;
+}
+#gameOver{
+    font-size: large;
+}

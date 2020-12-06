@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>$Title$</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<section id="cover" class="min-vh-100">
+    <div id="cover-caption">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto form p-4 backdrop">
+                    <h1 class="display-4 py-2">Hangman</h1>
+                    <div id="wordBox">
+                        <span id="hiddenWord"> </span>
+                    </div>
+                    <div>
+                        <p id="pGuess">Guesses:</p>
+                        <span id="letterGuesses"></span>
+                    </div>
+                    <div id="wgDiv">
+                        <p>Wrong Guesses: <span id="wGuesses">0</span>/6</p>
+                    </div>
+                    <div id="gameMessage">
+                        <span id="gameOver"> </span>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span id="dupeGuess"></span>
+                            <label for="guessInput">Guess a letter <input type="text" id="guessInput"></label>
+                        </div>
+                    </div>
+                    <div class="row" id="buttons">
+                        <div class="col">
+                            <button id="guessButton" class="btn btn-primary">Guess!</button>
+                        </div>
+                        <div class="col">
+                            <button id="ngButton" class="btn btn-primary">New Game</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+<script src="main.js"></script>
+
+</html>
